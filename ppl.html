@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!-- Created  with the help of CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+    <style>
+        *{padding:0;margin:0;}
+         /* for work out page, three cell layout */
+* {box-sizing: border-box;}
+
+header {
+	background: linear-gradient(90deg, #6fe8ef 0%, #8eecc9 25%);
+	box-shadow: 0 0.125rem 0.75rem hsl(0, 0%, 50%);
+    font-size: 1.5rem;
+	padding: .5rem 1rem; /* rem = “root em”*/
+    top:0;
+}
+
+/* format for main */
+main {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: .75rem;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  padding: 8px;
+  margin: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  /* Style the footer */
+
+  .footerb {
+    position: fixed;
+    font-family: sans-serif;
+    left: 10px;
+    bottom: 0;
+    width: 98.3%;
+    color: rgb(0, 0, 0);
+    text-align: left;
+ }
+
+ .page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+  text-align: center;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+  text-align: center;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height:20px; 
+  text-align: center;
+}
+ table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+      <meta charset="utf-8">
+      <title>PPL HOME</title>
+      <link rel="icon" type="image/x-icon" href="lowgo.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+    <header>
+        <h1>PUSH PULL LEG MONTHLY PLAN </h1>
+    </header>
+    <main>
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+        
+        <h2>PUSH (A)</h2>
+        
+        <table>
+          <tr>
+            <th>Exercise</th>
+            <th>Set</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Flat Barbell Bench Press</td>
+            <td>4</td>
+            <td>6-10</td>
+          </tr>
+          <tr>
+            <td>Incline Bench Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Seated Shoulder Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Flat Bench Dumbell Flyes</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+          <tr>
+            <td>Standing Dumbell Lateral Raises</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Tricep Rope Pushdown</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+            <tr>
+            <td>EZ Bar Skullcrusher</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+        </table>
+    </div>        
+  
+    <div class="column" style="background-color:#bbb;">
+    
+    <h2>PULL (A)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Row</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Neutral Lat Pulldown</td>
+        <td>3</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Dumbell Shrug</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Face Pull</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Barbell Curl</td>
+        <td>3</td>
+        <td>8-12</td>
+      </tr>
+      <tr>
+        <td>Hammer Curl</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Leg Raises</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2>LEGS (A)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Squat</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Romanian Deadlift</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Leg Press</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Barbell Lunges</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Leg Curl</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Calf Press</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Seated Leg Extensions</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+    </table>
+    
+  </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        
+        <h2>PUSH (B)</h2>
+        
+        <table>
+          <tr>
+            <th>Exercise</th>
+            <th>Set</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Flat Barbell Bench Press</td>
+            <td>4</td>
+            <td>6-10</td>
+          </tr>
+          <tr>
+            <td>Incline Bench Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Seated Shoulder Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Flat Bench Dumbell Flyes</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+          <tr>
+            <td>Standing Dumbell Lateral Raises</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Tricep Rope Pushdown</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+            <tr>
+            <td>EZ Bar Skullcrusher</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+        </table>
+    </div>        
+  
+    <div class="column" style="background-color:#bbb;">
+    
+    <h2>PULL (B)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Row</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Neutral Lat Pulldown</td>
+        <td>3</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Dumbell Shrug</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Face Pull</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Barbell Curl</td>
+        <td>3</td>
+        <td>8-12</td>
+      </tr>
+      <tr>
+        <td>Hammer Curl</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Leg Raises</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2>LEGS (B)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Squat</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Romanian Deadlift</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Leg Press</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Barbell Lunges</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Leg Curl</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Calf Press</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Seated Leg Extensions</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+    </table>
+    
+  </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        
+        <h2>PUSH (C)</h2>
+        
+        <table>
+          <tr>
+            <th>Exercise</th>
+            <th>Set</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Flat Barbell Bench Press</td>
+            <td>4</td>
+            <td>6-10</td>
+          </tr>
+          <tr>
+            <td>Incline Bench Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Seated Shoulder Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Flat Bench Dumbell Flyes</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+          <tr>
+            <td>Standing Dumbell Lateral Raises</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Tricep Rope Pushdown</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+            <tr>
+            <td>EZ Bar Skullcrusher</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+        </table>
+    </div>        
+  
+    <div class="column" style="background-color:#bbb;">
+    
+    <h2>PULL (C)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Row</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Neutral Lat Pulldown</td>
+        <td>3</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Dumbell Shrug</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Face Pull</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Barbell Curl</td>
+        <td>3</td>
+        <td>8-12</td>
+      </tr>
+      <tr>
+        <td>Hammer Curl</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Leg Raises</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2>LEGS (C)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Squat</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Romanian Deadlift</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Leg Press</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Barbell Lunges</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Leg Curl</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Calf Press</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Seated Leg Extensions</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+    </table>
+    
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        
+        <h2>PUSH (D)</h2>
+        
+        <table>
+          <tr>
+            <th>Exercise</th>
+            <th>Set</th>
+            <th>Reps</th>
+          </tr>
+          <tr>
+            <td>Flat Barbell Bench Press</td>
+            <td>4</td>
+            <td>6-10</td>
+          </tr>
+          <tr>
+            <td>Incline Bench Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Seated Shoulder Press</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Flat Bench Dumbell Flyes</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+          <tr>
+            <td>Standing Dumbell Lateral Raises</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Tricep Rope Pushdown</td>
+            <td>3</td>
+            <td>12-15</td>
+          </tr>
+            <tr>
+            <td>EZ Bar Skullcrusher</td>
+            <td>3</td>
+            <td>10-12</td>
+          </tr>
+        </table>
+    </div>        
+  
+    <div class="column" style="background-color:#bbb;">
+    
+    <h2>PULL (D)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Row</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Neutral Lat Pulldown</td>
+        <td>3</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Dumbell Shrug</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Face Pull</td>
+        <td>2</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Barbell Curl</td>
+        <td>3</td>
+        <td>8-12</td>
+      </tr>
+      <tr>
+        <td>Hammer Curl</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Leg Raises</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2>LEGS (D)</h2>
+    
+    <table>
+      <tr>
+        <th>Exercise</th>
+        <th>Set</th>
+        <th>Reps</th>
+      </tr>
+      <tr>
+        <td>Barbell Squat</td>
+        <td>3</td>
+        <td>6-8</td>
+      </tr>
+      <tr>
+        <td>Romanian Deadlift</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Leg Press</td>
+        <td>3</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Barbell Lunges</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Leg Curl</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Calf Press</td>
+        <td>3</td>
+        <td>12-15</td>
+      </tr>
+        <tr>
+        <td>Seated Leg Extensions</td>
+        <td>3</td>
+        <td>15-20</td>
+      </tr>
+    </table>
+    
+  </div>
+  </div>
+
+  </body>
+</main>
+<footer class="site-footer">
+    <p> <a href="wotd.html">
+         <i class="fa fa-fort-awesome" style="font-size:48px;color:rgb(32, 98, 104)"></i></p></a>
+  <div class="site-footer"><p>Copyright &#169 2023 Aaron Hudon</p></div>
+</footer>
+  </html>

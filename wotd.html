@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Created  with the help of CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>GymTime</title>
+      <link rel="icon" type="image/x-icon" href="lowgo.png">
+      <link rel="stylesheet" href="css/style.css">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            <img src="lowgo.png" width="92" height="100">
+         </div>
+
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="tablinks" onclick="openServ(event, 'Home')" href="#">Home</a></li>
+
+            <li><a class="tablinks" onclick="openServ(event, 'About')" href="#">About</a></li>
+            
+            <li><a class="tablinks" onclick="openServ(event, 'Services')" href="#">Services</a></li>
+            
+            <li><a class="tablinks" onclick="openServ(event, 'Gallery')" href="#">Gallery</a></li>
+            
+            <li><a class="tablinks" onclick="openServ(event, 'Workouts')" href="#">Workouts</a></li>
+
+            <li><a class="tablinks" onclick="openServ(event, 'Contact Us')" href="#">Contact</a></li>
+         </ul>
+      </nav>
+      <div class="content">
+         <div id="Home" class="tabcontent" style="display:block">
+            <h1>Ready for your daily workout?</h1>
+            <p>Welcome to our online training system</p>
+          </div>
+
+          <div id="About" class="tabcontent">
+            <h2>About</h2>
+            <p>Health and Wellness through various methods</p> 
+          </div>
+
+          <div id="Services" class="tabcontent">
+            <h3>Services</h3>
+            <p>Here are the services provided by 4tun8:</p>
+            <p>Shiatsu Massage</p>
+            <p>Yoga Sessions</p>
+            <p>Personal Training</p>
+            <p>Free Online Tips</p>
+          </div>
+
+          <div id="Gallery" class="tabcontent">
+            <h4>Gallery</h4>
+            <p>Pictures coming soon</p>
+          </div>
+
+          <div id="Workouts" class="tabcontent">
+            <h5>Workouts!</h5>
+            <p>Here at the 4tun8 gym we believe in a PPL routine</p> 
+            <p>PPL: Push-Pull-Leg places emphasis on 3 workouts</p>
+            <div class="parent">
+              <ul>
+                <li>1: Chest, triceps and shoulders</li>
+                <li>2: Back and biceps</li>
+                <li>3: Legs</li>
+              </ul>
+            </div>
+            <a href="ppl.html">Click here for workouts</a>
+          </div>
+
+          <div id="Contact Us" class="tabcontent">
+            <h4>Contact Us</h4>
+            <p>Address:</p>
+              <p>1 River St, Erving, MA 01344 -- Building 17, Room 141 </p>
+            <p>Hours of Operation:</p>
+              <p>Monday through Saturday 9 am - 4 pm </p>
+            <p>Email for more information:</p>
+              <p>XXXXXX@gmail.com</p>
+            
+            <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+            
+            <p><!-- Example HTML form -->
+              <form action="process_form.php" method="post">
+                  
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control mt-4" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control mt-4" id="email" name="email" required>
+              
+                  <label for="message">Message:</label>
+                  <textarea class="form-control mt-4" id="message"  name="message" required></textarea>
+              
+                  <input type="submit" class="btn btn-primary mt-4" value="Submit" name="submit">
+              </form>
+              </p>
+
+          </div>
+      </div>
+      
+      <script>
+        document.getElementsByClassName('tablinks')[0].click()
+        function openServ(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+   </body>
+   
+   <footer>
+    <p>Copyright &#169 2023 Aaron Hudon with help from CodingNepal</p>
+  </footer>
+  <div class="footerb"><a href="../index_copy.html">Click Here to Return Home</a></div>
+</html>
