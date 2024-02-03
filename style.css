@@ -7,16 +7,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Add this CSS for left-aligned navigation links */
 nav {
   display: flex;
-  height: 100px;
-  width: 100%;
-  background: #23abc099;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 10px 0 5%; /* Adjusted padding for better responsiveness */
-  flex-wrap: wrap;
-  box-shadow: 0 0 5rem hsla(210, 100%, 67%, 0.5);
+  padding: 10px;
 }
 
 nav .logo {
