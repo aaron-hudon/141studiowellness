@@ -1,92 +1,89 @@
 <!DOCTYPE html>
-<!-- Created  with the help of CodingNepal -->
+<!-- Created with the help of CodingNepal -->
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>141studiowellness</title>
-      <link rel="icon" type="image/x-icon" href="lowgo.png">
-      <link rel="stylesheet" href="style.css">
-      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
-      <nav>
-         <div class="logo">
-            <img src="lowgo.png" width="92" height="100">
-         </div>
+  <head>
+    <meta charset="utf-8">
+    <title>141studiowellness</title>
+    <link rel="icon" type="image/x-icon" href="lowgo.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-         <i class="fas fa-bars"></i>
-         </label>
-         <ul>
-            <li><a class="tablinks" onclick="openServ(event, 'Home')" href="#">Home</a></li>
-
-            <li><a class="tablinks" onclick="openServ(event, 'About')" href="#">About</a></li>
-            
-            <li><a class="tablinks" onclick="openServ(event, 'Services')" href="#">Services</a></li>
-            
-            <li><a class="tablinks" onclick="openServ(event, 'Gallery')" href="#">Gallery</a></li>
-
-            <li><a class="tablinks" onclick="openServ(event, 'Contact Us')" href="#">Contact</a></li>
-         </ul>
-      </nav>
-      <div class="content">
-         <div id="Home" class="tabcontent" style="display:block">
-            <h1>Welcome to 141 Studio Wellness!</h1>
-            <p></p>
-          </div>
-
-          <div id="About" class="tabcontent">
-            <h2>About</h2>
-            <p>Health and Wellness through various methods</p> 
-          </div>
-
-          <div id="Services" class="tabcontent">
-            <h3>Services</h3>
-            <p>Here are the services provided by 141studiowellness:</p>
-            <p>Shiatsu Massage</p>
-            <p>Yoga Sessions</p>
-            <p>Personal Training</p>
-            <p>Free Online Tips</p>
-          </div>
-
-          <div id="Gallery" class="tabcontent">
-            <h4>Gallery</h4>
-            <p>Pictures coming soon</p>
-          </div>
-
- <div id="Contact Us" class="tabcontent">
-            <h4>Contact Us</h4>
-            <p>Address:</p>
-              <p>1 River St, Erving, MA 01344 -- Building 17, Room 141 </p>
-            <p>Hours of Operation:</p>
-              <p>Monday through Saturday 9 am - 4 pm </p>
-            <p>Email for more information:</p>
-              <p>paulcushing@141studiowellness.com</p>
-          </div>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="lowgo.png" alt="Logo" width="92" height="100">
       </div>
-	      
-      
-      <script>
-        document.getElementsByClassName('tablinks')[0].click()
-        function openServ(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a class="tablinks" onclick="openServ(event, 'Home')" href="#">Home</a></li>
+        <li><a class="tablinks" onclick="openServ(event, 'About')" href="#">About</a></li>
+        <li><a class="tablinks" onclick="openServ(event, 'Services')" href="#">Services</a></li>
+        <li><a class="tablinks" onclick="openServ(event, 'Gallery')" href="#">Gallery</a></li>
+        <li><a class="tablinks" onclick="openServ(event, 'Contact Us')" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div id="Home" class="tabcontent" style="display:block">
+        <h1>Welcome to 141 Studio Wellness!</h1>
+        <p></p>
+      </div>
+
+      <div id="About" class="tabcontent">
+        <h2>About</h2>
+        <p>Health and Wellness through various methods</p> 
+      </div>
+
+      <div id="Services" class="tabcontent">
+        <h3>Services</h3>
+        <p>Here are the services provided by 141studiowellness:</p>
+        <p>Shiatsu Massage</p>
+        <p>Yoga Sessions</p>
+        <p>Personal Training</p>
+        <p>Free Online Tips</p>
+      </div>
+
+      <div id="Gallery" class="tabcontent">
+        <h4>Gallery</h4>
+        <p>Pictures coming soon</p>
+      </div>
+
+      <div id="Contact Us" class="tabcontent">
+        <h4>Contact Us</h4>
+        <p>Address:</p>
+        <p>1 River St, Erving, MA 01344 -- Building 17, Room 141 </p>
+        <p>Hours of Operation:</p>
+        <p>Monday through Saturday 9 am - 4 pm </p>
+        <p>Email for more information:</p>
+        <p>paulcushing@141studiowellness.com</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &#169; 2023 Aaron Hudon with help from CodingNepal</p>
+    </footer>
+
+    <script>
+      document.getElementsByClassName('tablinks')[0].click()
+      function openServ(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
-        </script>
-   </body>
-   
-   <footer>
-    <p>Copyright &#169 2023 Aaron Hudon with help from CodingNepal</p>
-  </footer>
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
 </html>
