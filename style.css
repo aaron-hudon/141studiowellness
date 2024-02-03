@@ -142,7 +142,6 @@ h5 {
 footer {
   font-family: sans-serif;
   background-color: rgb(220, 244, 231);
-  position: relative; /* Changed position to relative for better responsiveness */
   width: 100%;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -155,24 +154,9 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: rgb(220, 244, 231); /* Match the background color of the footer */
   color: rgb(0, 0, 0);
-  text-align: left;
+  text-align: center; /* Center the text for better appearance */
   padding: 10px; /* Added padding for better spacing */
-}
-
-#ContactUsContainer {
-  font-size: 16px;
-}
-
-.contact-info {
-  margin-bottom: 10px;
-}
-
-.contact-heading {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.contact-info p {
-  font-size: 16px;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
