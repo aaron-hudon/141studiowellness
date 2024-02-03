@@ -164,6 +164,22 @@ footer {
     color: rgb(0, 0, 0);
     text-align: left;
  }
+	  #ContactUsContainer {
+    font-size: 16px; /* Default font size for the entire contact section */
+  }
+
+  .contact-info {
+    margin-bottom: 10px; /* Adjust the spacing between each section */
+  }
+
+  .contact-heading {
+    font-size: 20px; /* Font size for headings */
+    font-weight: bold; /* Optional: Make headings bold */
+  }
+
+  .contact-info p {
+    font-size: 16px; /* Font size for information */
+  }
 
 </style>
 
@@ -238,16 +254,17 @@ footer {
             <a href="ppl.html">Click here for workouts</a>
           </div>
 
-          <div id="Contact Us" class="tabcontent">
-            <h4>Contact Us</h4>
-            <p>Address:</p>
-              <p>1 River St, Erving, MA 01344 -- Building 17, Room 141 </p>
-            <p>Hours of Operation:</p>
-              <p>Monday through Saturday 9 am - 4 pm </p>
-            <p>Email for more information:</p>
-              <p>paulcushing@141studiowellness.com</p>
-          </div>
-      </div>
+<div id="ContactUsContainer" class="tabcontent">
+  <div class="contact-info">
+    <h4 class="contact-heading">Contact Us</h4>
+    <p><span class="contact-heading">Address:</span></p>
+    <p class="contact-info">1 River St, Erving, MA 01344 -- Building 17, Room 141</p>
+    <p><span class="contact-heading">Hours of Operation:</span></p>
+    <p class="contact-info">Monday through Saturday 9 am - 4 pm</p>
+    <p><span class="contact-heading">Email for more information:</span></p>
+    <p class="contact-info">paulcushing@141studiowellness.com</p>
+  </div>
+</div>
       
       <script>
         document.getElementsByClassName('tablinks')[0].click()
